@@ -1,0 +1,9 @@
+*.html
+*.pck
+*.js
+*.png
+*.import
+*.png.import
+*.wasm
+*.worker.js
+*.audio.worklet.js

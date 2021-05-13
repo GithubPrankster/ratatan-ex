@@ -1,0 +1,21 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=2]
+
+[ext_resource path="res://assets/craters.png" type="Texture" id=1]
+
+[sub_resource type="Shader" id=1]
+code = "shader_type canvas_item;
+uniform sampler2D tex : hint_albedo;
+
+const vec2 grad_pos = vec2(0.5, 0.0);
+
+void fragment(){
+	vec3 og_tex = texture(TEXTURE, UV).rgb;
+	if(og_tex.r == 0.0)
+		discard;
+	COLOR.rgb = texture(tex, (UV + vec2(TIME * 0.5, 0.0)) * vec2(1.0, -1.0)).rgb * og_tex * MODULATE.rgb;
+	COLOR.rgb *= 1.0 - distance(grad_pos, UV);
+}"
+
+[resource]
+shader = SubResource( 1 )
+shader_param/tex = ExtResource( 1 )
