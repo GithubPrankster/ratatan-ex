@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/bright-respite.ogg-b466d98e597a9327022649a54ae9ffca.oggstr"
+
+[deps]
+
+source_file="res://assets/music/bright-respite.ogg"
+dest_files=[ "res://.import/bright-respite.ogg-b466d98e597a9327022649a54ae9ffca.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

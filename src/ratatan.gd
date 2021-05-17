@@ -5,13 +5,10 @@ export(float) var grav : float = 0.1
 export(float) var power : float = grav + 0.2
 
 var velocity : Vector2 = Vector2(mov, 0.0)
-var pause : bool = true
 var finish : bool = false
 
 func _physics_process(delta):
-	if Input.is_action_just_pressed("pause"):
-		pause = !pause
-	if !pause and !finish:
+	if !finish:
 		if Input.is_action_pressed("propel"):
 			velocity.y -= power
 		

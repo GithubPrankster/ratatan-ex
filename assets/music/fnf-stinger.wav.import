@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/fnf-stinger.wav-d32d15213e7a55fbf2aa512588793ff4.sample"
+
+[deps]
+
+source_file="res://assets/music/fnf-stinger.wav"
+dest_files=[ "res://.import/fnf-stinger.wav-d32d15213e7a55fbf2aa512588793ff4.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

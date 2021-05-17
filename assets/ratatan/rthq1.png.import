@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/cosmic.png-098689ea7c743500a6b8380c8677d325.stex"
+path="res://.import/rthq1.png-0e81065598e9b6cfb3b92e56903c04cb.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/cosmic.png"
-dest_files=[ "res://.import/cosmic.png-098689ea7c743500a6b8380c8677d325.stex" ]
+source_file="res://assets/ratatan/rthq1.png"
+dest_files=[ "res://.import/rthq1.png-0e81065598e9b6cfb3b92e56903c04cb.stex" ]
 
 [params]
 
@@ -19,7 +19,7 @@ compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
-flags/repeat=1
+flags/repeat=0
 flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
