@@ -12,9 +12,13 @@ config_version=4
 
 config/name="Ratatan EX"
 config/description="Ratatan's faced with the wrath of the little planets, angry that she keeps hitting into them. Avoid asteroids, space scrap, and show 'em who's the queen of the system."
-run/main_scene="res://src/world.tscn"
+run/main_scene="res://src/select.tscn"
 boot_splash/bg_color=Color( 0, 0, 0, 1 )
-config/icon="res://icon.png"
+config/icon="res://assets/ratatan/rthq1.png"
+
+[autoload]
+
+Bus="*res://src/general/bus.gd"
 
 [display]
 

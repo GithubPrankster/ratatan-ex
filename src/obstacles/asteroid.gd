@@ -7,6 +7,6 @@ func _ready() -> void:
 	randomize()
 	spin = rand_range(2.0, 8.0)
 
-func _physics_process(delta):
+func _physics_process(delta) -> void:
 	rotation += spin * delta
 	translate(velocity * delta)

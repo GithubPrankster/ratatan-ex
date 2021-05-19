@@ -1,6 +1,6 @@
 extends Sprite
 
-export(PackedScene) var scene_goto = null
+export(String, FILE, "*.tscn") var scene_goto = String()
 
 onready var selector = $select
 
@@ -10,24 +10,25 @@ var special_color : Color = Color(0.3, 0.6, 0.6, 0.8)
 var original_y : float = 0.0
 var rnd_offset : float = 0.0
 
-# TODO: level logic (use an export var for the packed scene to enter!)
-func _ready():
+# TODO: level logic (use the export var and a cool load singleton!)
+
+func _ready() -> void:
 	randomize()
 	rnd_offset = rand_range(0.0, 6.28)
 	original_y = position.y
 
-func _process(delta):
+func _process(delta) -> void:
 	position.y = original_y + (sin((OS.get_ticks_msec() * 0.001)+ rnd_offset) * 5.0)
 
-func _on_area_mouse_entered():
+func _on_area_mouse_entered() -> void:
 	selector.play()
 	modulate = special_color
+	Bus.emit_signal("center_pos", position)
 
-func _on_area_mouse_exited():
+func _on_area_mouse_exited() -> void:
 	modulate = normal_color
 
-
-func _on_area_input_event(viewport, event, shape_idx):
+func _on_area_input_event(viewport, event, shape_idx) -> void:
 	var mouse_click = event as InputEventMouseButton
 	if mouse_click and mouse_click.button_index == 1 and mouse_click.pressed:
 		print("swag")
