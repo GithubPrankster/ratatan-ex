@@ -2,7 +2,7 @@ extends Sprite
 
 export(String, FILE, "*.tscn") var scene_goto = String()
 
-onready var selector = $select
+onready var selector : AudioStreamPlayer = $select
 
 var normal_color : Color = modulate
 var special_color : Color = Color(0.3, 0.6, 0.6, 0.8)
@@ -17,7 +17,7 @@ func _ready() -> void:
 	rnd_offset = rand_range(0.0, 6.28)
 	original_y = position.y
 
-func _process(delta) -> void:
+func _process(_delta) -> void:
 	position.y = original_y + (sin((OS.get_ticks_msec() * 0.001)+ rnd_offset) * 5.0)
 
 func _on_area_mouse_entered() -> void:
@@ -28,7 +28,7 @@ func _on_area_mouse_entered() -> void:
 func _on_area_mouse_exited() -> void:
 	modulate = normal_color
 
-func _on_area_input_event(viewport, event, shape_idx) -> void:
+func _on_area_input_event(_viewport, event, _shape_idx) -> void:
 	var mouse_click = event as InputEventMouseButton
 	if mouse_click and mouse_click.button_index == 1 and mouse_click.pressed:
 		print("swag")
