@@ -5,9 +5,9 @@
 [ext_resource path="res://assets/music/bright-respite.ogg" type="AudioStream" id=3]
 [ext_resource path="res://src/select.gd" type="Script" id=4]
 [ext_resource path="res://assets/fonts/Kylarzio.ttf" type="DynamicFontData" id=5]
-[ext_resource path="res://src/general/level_select.tscn" type="PackedScene" id=6]
-[ext_resource path="res://src/general/cam.gd" type="Script" id=7]
-[ext_resource path="res://src/general/title.gd" type="Script" id=8]
+[ext_resource path="res://src/menu/level_select.tscn" type="PackedScene" id=6]
+[ext_resource path="res://src/menu/cam.gd" type="Script" id=7]
+[ext_resource path="res://src/menu/title.gd" type="Script" id=8]
 
 [sub_resource type="DynamicFont" id=1]
 outline_size = 1

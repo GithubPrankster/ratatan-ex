@@ -1,0 +1,35 @@
+[Main Menu]
+- SceneLoader Singleton
+Loading Screen scene 
+Thread-based loading logic
+
+[Stage Template]
+Fill one with all you need lool
+[Pausing]
+[Movement]
+[Powers]
+[Obstacles]
+[Missile Aimer]
+[Blaster]
+[Level Gameloop]
+[Level 1, 2, 3, 4 and 5-1]
+[Blinky]
+(Inspiration - Bro from Homestuck)
+[Level 6, 7, 8, 9 and 10-1]
+[Powder]
+(Inspiration - schüt gun is gud)
+[Level 11, 12, 13, 14 and 15-1]
+[[Morning Star]]
+(Inspiration - IS GUD NOT BABY GAEM)
+[Ending]
+[Prologue]
+[Voice Acting]
+
+[Cosmica Skylight - secret 2hu ripoff boss]
+(Inspiration - Marisa from 2hu)
+
+[Promotional]
+Ratatan portrait
+Itch.io page done
+- Stage stuff devlog
+- Boss stuff devlog (hint at Cosmica)
