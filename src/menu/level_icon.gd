@@ -1,6 +1,6 @@
 extends Sprite
 
-export(String, FILE, "*.tscn") var scene_goto = String()
+export(String, FILE, "*.tscn") var scene_goto : String = String()
 
 onready var selector : AudioStreamPlayer = $select
 
@@ -31,4 +31,4 @@ func _on_area_mouse_exited() -> void:
 func _on_area_input_event(_viewport, event, _shape_idx) -> void:
 	var mouse_click = event as InputEventMouseButton
 	if mouse_click and mouse_click.button_index == 1 and mouse_click.pressed:
-		print("swag")
+		SceneLoader.load_scene(scene_goto)

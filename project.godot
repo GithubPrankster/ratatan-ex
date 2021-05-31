@@ -20,6 +20,8 @@ config/windows_native_icon="res://icon.ico"
 [autoload]
 
 Bus="*res://src/general/bus.gd"
+SceneLoader="*res://src/general/sceneloader.gd"
+Music="*res://src/general/music.gd"
 
 [debug]
 
