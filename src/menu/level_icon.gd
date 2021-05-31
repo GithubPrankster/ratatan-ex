@@ -10,8 +10,6 @@ var special_color : Color = Color(0.3, 0.6, 0.6, 0.8)
 var original_y : float = 0.0
 var rnd_offset : float = 0.0
 
-# TODO: level logic (use the export var and a cool load singleton!)
-
 func _ready() -> void:
 	randomize()
 	rnd_offset = rand_range(0.0, 6.28)
