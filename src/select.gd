@@ -34,5 +34,4 @@ func _process(delta) -> void:
 			modulate.v = clamp(modulate.v - (delta * 0.5), 0.0, 1.0)
 		else:
 			Bus.emit_signal("faded")
-			print("See ya")
 			set_process(false) # buh bye

@@ -21,7 +21,7 @@ extents = Vector2( 150, 78 )
 pause_mode = 2
 script = ExtResource( 7 )
 
-[node name="match" type="Node" parent="."]
+[node name="match" type="Node2D" parent="."]
 pause_mode = 1
 
 [node name="space" parent="match" instance=ExtResource( 1 )]
