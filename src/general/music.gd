@@ -6,6 +6,7 @@ onready var player : AudioStreamPlayer = AudioStreamPlayer.new()
 var target_db : float = -20.0
 
 func _ready() -> void:
+	pause_mode = Node.PAUSE_MODE_PROCESS
 	add_child(player)
 	player.stream = initial_track
 	player.volume_db = -80.0

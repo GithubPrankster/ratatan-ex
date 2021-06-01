@@ -19,9 +19,10 @@ func _process(_delta) -> void:
 	position.y = original_y + (sin((OS.get_ticks_msec() * 0.001)+ rnd_offset) * 5.0)
 
 func _on_area_mouse_entered() -> void:
-	selector.play()
-	modulate = special_color
-	Bus.emit_signal("center_pos", position)
+	if !SceneLoader.blocker:
+		selector.play()
+		modulate = special_color
+		Bus.emit_signal("center_pos", position)
 
 func _on_area_mouse_exited() -> void:
 	modulate = normal_color
