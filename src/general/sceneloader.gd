@@ -6,7 +6,7 @@ var root = null
 var current_scene = null
 
 var loader : ResourceInteractiveLoader = null
-var time_max = 100 # msec
+const TIME_MAX = 100 # msec
 var blocker : bool = false
 
 func _ready() -> void:
@@ -25,7 +25,7 @@ func _process(delta) -> void:
 		set_process(false)
 		return
 
-	while OS.get_ticks_msec() < OS.get_ticks_msec() + time_max:
+	while OS.get_ticks_msec() < OS.get_ticks_msec() + TIME_MAX:
 		var err = loader.poll()
 
 		if err == ERR_FILE_EOF: # Finish!
@@ -49,3 +49,4 @@ func load_scene(path : String) -> void:
 	set_process(true)
 	
 	_scene_switcher(load_screen)
+	blocker = false
