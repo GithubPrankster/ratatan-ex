@@ -13,6 +13,13 @@ func _ready() -> void:
 	root = get_tree().get_root()
 	current_scene = root.get_child(root.get_child_count() - 1)
 
+func _scene_switcher(res : PackedScene) -> void:
+	var new_one = res.instance()
+	root.add_child(new_one)
+	
+	current_scene.queue_free()
+	current_scene = new_one
+
 func _process(delta) -> void:
 	if loader == null:
 		set_process(false)
@@ -22,11 +29,8 @@ func _process(delta) -> void:
 		var err = loader.poll()
 
 		if err == ERR_FILE_EOF: # Finish!
-			current_scene.queue_free()
-			current_scene = loader.get_resource().instance()
+			_scene_switcher(loader.get_resource())
 			loader = null
-			
-			root.add_child(current_scene)
 			Music.target_db = 0.0
 			break
 		elif err != OK:
@@ -44,7 +48,4 @@ func load_scene(path : String) -> void:
 	loader = ResourceLoader.load_interactive(path)
 	set_process(true)
 	
-	current_scene.queue_free()
-	current_scene = load_screen.instance()
-	
-	root.add_child(current_scene)
+	_scene_switcher(load_screen)
