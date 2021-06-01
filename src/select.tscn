@@ -76,12 +76,3 @@ position = Vector2( 174, 108 )
 
 [node name="level5" parent="levels" instance=ExtResource( 6 )]
 position = Vector2( 249, 104 )
-
-[node name="fader" type="ColorRect" parent="."]
-margin_right = 320.0
-margin_bottom = 180.0
-mouse_filter = 2
-color = Color( 0, 0, 0, 0 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
