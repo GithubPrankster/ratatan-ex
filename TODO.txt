@@ -1,16 +1,37 @@
 [Main Menu]
-- SceneLoader Singleton
-Loading Screen scene 
-Thread-based loading logic
+- SceneLoader Singleton [DONE]
+Loading Screen scene [DONE]
+Level Icon info
 
 [Stage Template]
 Fill one with all you need lool
+
 [Pausing]
+Volume decrease
+Iconography
+
 [Movement]
+Horizontal control
+Camera move
+
 [Powers]
+Dash
+Rocket
+
 [Obstacles]
+Asteroid
+Scrap
+Truss
+Scenery
+
 [Missile Aimer]
+Spawning
+Aim and Release
+
 [Blaster]
+Spawning
+Aim and Shoot
+
 [Level Gameloop]
 [Level 1, 2, 3, 4 and 5-1]
 [Blinky]
